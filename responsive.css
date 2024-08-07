@@ -79,8 +79,8 @@
 
     /* body */
     .filter_bar2 {
-        /* width: 330px; */
-        /* width: 550px; */
+        /* width: 370px; */
+        width: 90vw;
         padding: 20px 24px 20px 24px;
         border-radius: 20px;
         border: 2px solid;
@@ -179,13 +179,12 @@
     .modal_contain {
         border-radius: 20px;
         /* height: 600px; */
-        height: 50vh;
-        height: -webkit-fill-available;
-        overflow-y: auto;
+        height: 75vh;
+        overflow-y: scroll;
         overflow-x: hidden;
         position: absolute;
-        top: 80px;
-        bottom: 60px;
+        top: 120px;
+        /*bottom: 60px; */
     }
 
 
@@ -699,7 +698,7 @@
         justify-content: center;
     }
 
-    #stayupdate_text {}
+
 
     /* header */
     .header {
