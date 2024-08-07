@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>afterlogin</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="grid wide">
+        <div class="row" id="header">
+            <div class="col l-12 m-12 c-12">
+                <div class="app">
+                    <!-- header-->
+                    <div class="grid wide">
+                        <div class="header">
+                            <div class="row">
+                                <div class="col l-11 l-o-1-2 m-12">
+                                    <div class="header_name_content">
+                                        <p id="header_name_textp">Sign up and get 20% off to your first order. <a
+                                                href="#">Sign Up
+                                                Now</a></p>
+                                        <div><i class="fa-solid fa-xmark" id="header_name--icon"></i></div>
+                                    </div>
+                                </div>
+                                <div class="col l-11 l-o-1-2 m-12">
+                                    <div class="header_content">
+                                        <div class="header_logo">SHOP.CO</div>
+
+                                        <ul class="header_nav">
+                                            <li class="nav_item" id="nav_shop">Shop<i class="fa-solid fa-angle-left"
+                                                    id="shop_drop"></i></li>
+                                            <li class="nav_item">On Sale</li>
+                                            <li class="nav_item">New Arrivals</li>
+                                            <li class="nav_item">Brands</li>
+                                        </ul>
+                                        <div class="header_searchbar">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <input type="search" id="search_input" placeholder="Search for products...">
+                                        </div>
+                                        <div class="header_tool">
+                                            <div class="look"></div>
+                                            <div class="cart"></div>
+                                            <div class="user"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-11 l-o-1-2 m-12">
+                                    <div class="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+    <!--begin container-->
+    <div class="container">
+        <div class="grid wide" id="contai">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="index_page">
+                        <p id="index_home">Home</p>
+                        <i class="fa-solid fa-angle-left" id="index_page_point"></i>
+                        <p id="index_item">Casual</p>
+                    </div>
+                </div>
+
+                <div class="col l-12 m-12 c-12" id="section">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+
+                                <div class="filter_bar">
+
+                                    <div class="filter">
+                                        <div class="filter_title">
+                                            <p>Filters</p>
+                                            <div class="filter_icon"></div>
+                                            <!-- <i class="fa-solid fa-xmark" id="close_filter_bar"></i> -->
+                                        </div>
+                                        <div class="filter_line"></div>
+                                        <ul class="list_filter_type">
+                                            <li class="type_filter">
+                                                <p>T-shirts</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Shorts</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Shirts</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Hoodies</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Jeans</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="filter_line"></div>
+
+                                    <div class="price">
+                                        <div class="price_title">
+                                            <p>Prices</p>
+                                            <i class="fa-solid fa-angle-left price1" id="filter_drop_icon"></i>
+                                        </div>
+                                        <!-- <div class="range close" id="range1">
+                                            <input type="range" min="0" max="100" step="10">
+                                            <div class="value_range">
+                                                <p id="begin">$100</p>
+                                                <p id="end">$1000</p>
+                                            </div>
+                                        </div> -->
+                                        <div class="price-slider close" id="range1">
+                                            <div class="slider-container">
+                                                <div class="slider-track"></div>
+                                                <div class="slider-range"></div>
+                                                <input type="range" min="1" max="1000" value="1" id="slider-min">
+                                                <input type="range" min="1" max="1000" value="1000" id="slider-max">
+                                            </div>
+                                            <div class="price-labels">
+                                                <p id="min-value">$50</p>
+                                                <p id="max-value">$200</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="filter_line"></div>
+
+                                    <div class="colors">
+                                        <div class="color_title">
+                                            <p>Colors</p>
+                                            <i class="fa-solid fa-angle-left color1" id="filter_drop_icon"></i>
+                                        </div>
+                                        <ul class="list_color close" id="list_color1">
+                                            <li id="green"></li>
+                                            <li id="red"></li>
+                                            <li id="yellow"></li>
+                                            <li id="orange"></li>
+                                            <li id="blue_sky"></li>
+                                            <li id="blue"></li>
+                                            <li id="purple"></li>
+                                            <li id="pink"></li>
+                                            <li id="white"></li>
+                                            <li id="black"></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="filter_line"></div>
+
+                                    <div class="size">
+                                        <div class="size_title">
+                                            <p>Size</p>
+                                            <i class="fa-solid fa-angle-left size1" id="filter_drop_icon"></i>
+                                        </div>
+                                        <ul class="list_size close" id="list_size1">
+                                            <li class="size_item">XX-Small</li>
+                                            <li class="size_item">XX-Small</li>
+                                            <li class="size_item">Small</li>
+                                            <li class="size_item">Medium</li>
+                                            <li class="size_item">Large</li>
+                                            <li class="size_item">X-Large</li>
+                                            <li class="size_item">XX-Large</li>
+                                            <li class="size_item">3X-Large</li>
+                                            <li class="size_item">4X-Large</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="filter_line"></div>
+
+                                    <div class="dress_style">
+                                        <div class="size_title">
+                                            <p>Dress Style</p>
+                                            <i class="fa-solid fa-angle-left dress1" id="filter_drop_icon"></i>
+                                        </div>
+                                        <ul class="list_dress_type close" id="list_dress1">
+                                            <li class="type_filter">
+                                                <p>Casual</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Formal</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Party</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+
+                                            <li class="type_filter">
+                                                <p>Gym</p>
+                                                <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <button id="apply_filter">Apply Filter</button>
+                                </div>
+
+                            </div>
+                            <div class="col l-8-2 l-o-1-2-2 m-12 c-12">
+                                <div class="category">
+                                    <p id="category_title_name">Casual</p>
+                                    <div class="category_filter">
+                                        <p>Showing 1-10 of 100 Products Sort by:</p>
+                                        <select id="sort">
+                                            <option value="1">Most Popular</option>
+                                            <option value="2">Normal</option>
+                                            <option value="3">Hot</option>
+                                        </select>
+                                        <div class="filter_icon2"></div>
+
+                                    </div>
+                                </div>
+
+                                <ul class="list_product">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product1.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Gradient Graphic T-shirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div class="percent">3.5/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$145</div>
+                                            </li>
+                                        </div>
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product2.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Polo with Tipping Details</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div class="percent">4.5/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$180</div>
+                                            </li>
+                                        </div>
+
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product3.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Black Striped T-shirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="percent">5.0/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$120 <p id="old_price">$150</p>
+                                                    <p id="discount">-30%</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/prooduct4.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Skinny Fit Jeans</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div class="percent">3.5/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$240 <p id="old_price">$260</p>
+                                                    <p id="discount">-20%</p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product5.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Checkered Shirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div class="percent">4.5/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$180 <p id="old_price"></p>
+                                                    <p id="discount" class="close"></p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product6.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Sleeve Striped T-Sshirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star-half"></i>
+                                                    </div>
+                                                    <div class="percent">4.5/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$130 <p id="old_price">$160</p>
+                                                    <p id="discount">-30%</p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product7.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Vertical Striped Shirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="percent">5.0/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$212 <p id="old_price">$232</p>
+                                                    <p id="discount">-20%</p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product8.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Courage Graphic T-Shirt</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="percent">4.0/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$145 <p id="old_price"></p>
+                                                    <p id="discount" class="close"></p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+                                        <div class="col l-4 m-6 c-6">
+
+                                            <li class="product_item">
+                                                <div class="image_product"
+                                                    style="background-image: url('image/product7.png'); height: 260px;">
+                                                </div>
+                                                <div class="name_product">Loose Fit Bermura Shorts</div>
+                                                <div class="vote">
+                                                    <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+
+                                                    </div>
+                                                    <div class="percent">3.0/<span>5</span></div>
+                                                </div>
+                                                <div class="price_pproduct">$80 <p id="old_price"></p>
+                                                    <p id="discount" class="close"></p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+
+                                <div class="list_product_line"></div>
+
+                                <div class="pagination">
+
+                                    <div class="previous"><i class="fa-solid fa-arrow-left"
+                                            id="previous_left"></i>Previous</div>
+                                    <ul class="listpage">
+                                        <li class="listpage_item active_page">
+                                            <p>1</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>2</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>3</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>...</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>8</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>9</p>
+                                        </li>
+                                        <li class="listpage_item">
+                                            <p>10</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="next">Next<i class="fa-solid fa-arrow-left" id="next_right"></i></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stayupdate">
+                        <div class="row" id="stayupdate_row">
+                            <div class="col l-8 m-10">
+                                <p id="stayupdate_text">STAY UPTO DATE ABOUT OUR LATEST OFFERS</p>
+                            </div>
+                            <div class="col l-4 m-10">
+                                <form action="#" id="stayupdate_form">
+                                    <div class="stayupdate_form_email">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input type="email" placeholder="Enter your email address">
+                                    </div>
+                                    <input type="submit" value="Subscribe to Newsletter" id="subscribe">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <!--end container-->
+    <!--begin footer-->
+    <div class="grid wide">
+        <div class="footer">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="footer_item">
+                        <div class="row">
+                            <div class="col l-4 m-12">
+                                <div class="footer_item_1">
+                                    <p class="footer_logo">SHOP.CO</p>
+                                    <p class="footer_item_1--text">We have clothes that suits your style and which
+                                        you’re proud to wear. From women to men.</p>
+                                    <div class="list_contact">
+                                        <div class="twiter"><i class="fa-brands fa-twitter"></i></div>
+                                        <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                                        <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+                                        <div class="github"><i class="fa-brands fa-github"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-6">
+                                <div class="footer_item_2">
+                                    <p class="ft_title">Company</p>
+                                    <ul class="ft_title_item">
+                                        <li>About</li>
+                                        <li>Features</li>
+                                        <li>Works</li>
+                                        <li>Career</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-6">
+                                <div class="footer_item_3">
+                                    <p class="ft_title">Help</p>
+                                    <ul class="ft_title_item">
+                                        <li>Customer Support</li>
+                                        <li>Delivery Details</li>
+                                        <li>Terms & Conditions</li>
+                                        <li>Privacy Policy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-6">
+                                <div class="footer_item_4">
+                                    <p class="ft_title">FAQ</p>
+                                    <ul class="ft_title_item">
+                                        <li>Account</li>
+                                        <li>Manage Deliveries</li>
+                                        <li>Orders</li>
+                                        <li>Payments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-6">
+                                <div class="footer_item_5">
+                                    <p class="ft_title">Resources</p>
+                                    <ul class="ft_title_item">
+                                        <li>Free eBooks</li>
+                                        <li>Development Tutorial</li>
+                                        <li>How to - Blog</li>
+                                        <li>Youtube Playlist</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_line"></div>
+                    <div class="end_footer">
+                        <div class="row ">
+                            <div class="col l-6 m-12" id="left_footer">
+                                <p id="left_end_footer">Shop.co © 2000-2023, All Rights Reserved</p>
+                            </div>
+                            <div class="col l-6 m-12" id="right_footer">
+                                <div class="right_end_footer">
+                                    <div class="item_payment" style="background-image: url('/image/visa.png');"></div>
+                                    <div class="item_payment" style="background-image: url('/image/mastercard.png');">
+                                    </div>
+                                    <div class="item_payment" style="background-image: url('/image/paypal.png');"></div>
+                                    <div class="item_payment" style="background-image: url('/image/ipay.png');"></div>
+                                    <div class="item_payment" style="background-image: url('/image/ggpay.png');"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal close">
+        <div class="grid wide" id="contai2">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+
+                                <div class="modal_contain">
+                                    <div class="filter_bar2">
+
+                                        <div class="filter">
+                                            <div class="filter_title">
+                                                <p>Filters</p>
+                                                <div class="filter_icon"></div>
+                                                <i class="fa-solid fa-xmark" id="close_filter_bar"></i>
+                                            </div>
+                                            <div class="filter_line"></div>
+                                            <ul class="list_filter_type">
+                                                <li class="type_filter">
+                                                    <p>T-shirts</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Shorts</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Shirts</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Hoodies</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Jeans</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="filter_line"></div>
+
+                                        <div class="price">
+                                            <div class="price_title">
+                                                <p>Prices</p>
+                                                <i class="fa-solid fa-angle-left" id="filter_drop_icon"></i>
+                                            </div>
+                                            <!-- <div class="range">
+                                                <input type="range" min="0" max="100" step="10">
+                                                <div class="value_range">
+                                                    <p id="begin">$100</p>
+                                                    <p id="end">$1000</p>
+                                                </div>
+                                            </div> -->
+                                            <div class="price-slider2">
+                                                <div class="slider-container2">
+                                                    <div class="slider-track2"></div>
+                                                    <div class="slider-range2"></div>
+                                                    <input type="range" min="1" max="1000" value="1" id="slider-min2">
+                                                    <input type="range" min="1" max="1000" value="1000" id="slider-max2">
+                                                </div>
+                                                <div class="price-labels2">
+                                                    <span id="min-value2">$50</span>
+                                                    <span id="max-value2">$200</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="filter_line"></div>
+
+                                        <div class="colors">
+                                            <div class="color_title">
+                                                <p>Colors</p>
+                                                <i class="fa-solid fa-angle-left" id="filter_drop_icon"></i>
+                                            </div>
+                                            <ul class="list_color">
+                                                <li id="green"></li>
+                                                <li id="red"></li>
+                                                <li id="yellow"></li>
+                                                <li id="orange"></li>
+                                                <li id="blue_sky"></li>
+                                                <li id="blue"></li>
+                                                <li id="purple"></li>
+                                                <li id="pink"></li>
+                                                <li id="white"></li>
+                                                <li id="black"></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="filter_line"></div>
+
+                                        <div class="size">
+                                            <div class="size_title">
+                                                <p>Size</p>
+                                                <i class="fa-solid fa-angle-left" id="filter_drop_icon"></i>
+                                            </div>
+                                            <ul class="list_size">
+                                                <li class="size_item">XX-Small</li>
+                                                <li class="size_item">XX-Small</li>
+                                                <li class="size_item">Small</li>
+                                                <li class="size_item">Medium</li>
+                                                <li class="size_item">Large</li>
+                                                <li class="size_item">X-Large</li>
+                                                <li class="size_item">XX-Large</li>
+                                                <li class="size_item">3X-Large</li>
+                                                <li class="size_item">4X-Large</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="filter_line"></div>
+
+                                        <div class="dress_style">
+                                            <div class="size_title">
+                                                <p>Dress Style</p>
+                                                <i class="fa-solid fa-angle-left" id="filter_drop_icon"></i>
+                                            </div>
+                                            <ul class="list_dress_type">
+                                                <li class="type_filter">
+                                                    <p>Casual</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Formal</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Party</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+
+                                                <li class="type_filter">
+                                                    <p>Gym</p>
+                                                    <i class="fa-solid fa-angle-left" id="type_point"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <button id="apply_filter">Apply Filter</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const minSlider = document.getElementById('slider-min');
+    const maxSlider = document.getElementById('slider-max');
+    const minValue = document.getElementById('min-value');
+    const maxValue = document.getElementById('max-value');
+    const range = document.querySelector('.slider-range');
+
+    function setRange() {
+        const min = parseInt(minSlider.value);
+        const max = parseInt(maxSlider.value);
+
+        if (min > max) {
+            const temp = max;
+            maxSlider.value = min;
+            minSlider.value = temp;
+        }
+
+        const percent1 = ((minSlider.value - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
+        const percent2 = ((maxSlider.value - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
+
+        range.style.left = percent1 + "%";
+        range.style.width = (percent2 - percent1) + "%";
+
+        minValue.textContent = "$" + minSlider.value;
+        maxValue.textContent = "$" + maxSlider.value;
+    }
+
+    minSlider.addEventListener('input', setRange);
+    maxSlider.addEventListener('input', setRange);
+
+    setRange();
+
+    try {
+        const minSlider = document.getElementById('slider-min2');
+        const maxSlider = document.getElementById('slider-max2');
+        const minValue = document.getElementById('min-value2');
+        const maxValue = document.getElementById('max-value2');
+        const range = document.querySelector('.slider-range2');
+
+        function setRange() {
+            const min = parseInt(minSlider.value);
+            const max = parseInt(maxSlider.value);
+
+            if (min > max) {
+                const temp = max;
+                maxSlider.value = min;
+                minSlider.value = temp;
+            }
+
+            const percent1 = ((minSlider.value - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
+            const percent2 = ((maxSlider.value - minSlider.min) / (minSlider.max - minSlider.min)) * 100;
+
+            range.style.left = percent1 + "%";
+            range.style.width = (percent2 - percent1) + "%";
+
+            minValue.textContent = "$" + minSlider.value;
+            maxValue.textContent = "$" + maxSlider.value;
+        }
+
+        minSlider.addEventListener('input', setRange);
+        maxSlider.addEventListener('input', setRange);
+
+        setRange();
+    }
+    catch { }
+</script>
+
+</html>
