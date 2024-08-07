@@ -254,6 +254,9 @@ html::-webkit-scrollbar {
     line-height: 21.6px;
     text-align: left;
 }
+.modal{
+    display: none;
+}
 
 #index_home {
     width: 43px;
@@ -770,12 +773,27 @@ input[type="range"]::-webkit-slider-thumb {
 .category_filter {
     display: flex;
     height: 16px;
-    width: 396px;
+    width: 420px;
     justify-content: flex-end;
+}
+.sort_cate{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sort_cate>p {
+    height: 11px;
+    margin-right: 2px;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .category_filter>p {
     height: 11px;
+    margin-right: 10px;
     font-family: Satoshi;
     font-size: 16px;
     font-weight: 400;
@@ -807,6 +825,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .image_product {
+    height: 260px;
     border-radius: 20px;
     background-position-x: center;
     background-position-y: center;
