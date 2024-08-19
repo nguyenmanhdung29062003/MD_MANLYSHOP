@@ -422,12 +422,6 @@
 
     /* sd font Integral CF */
 
-    @font-face {
-        font-family: 'Integral CF';
-        src: url('Fontspring-DEMO-integralcf-extrabold.otf') format('opentype');
-        font-weight: 800;
-        font-style: normal;
-    }
 
 
     #stayupdate_text {
