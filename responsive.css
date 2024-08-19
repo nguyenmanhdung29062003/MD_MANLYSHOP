@@ -475,7 +475,7 @@
         font-family: Satoshi;
         font-size: 14px;
         font-weight: 500;
-        line-height: 21.6px;
+        /* line-height: 21.6px; */
         text-align: center;
         border: none;
 
