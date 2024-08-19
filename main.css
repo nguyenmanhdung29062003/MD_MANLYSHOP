@@ -6,6 +6,15 @@
     font-family: 'Satoshi', sans-serif;
 }
 
+/* sd font Integral CF */
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('Fontspring-DEMO-integralcf-extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -112,7 +121,8 @@ html::-webkit-scrollbar {
     gap: 0px;
     opacity: 0px;
     font-size: 32px;
-    font-weight: bolder;
+    font-family: 'Integral CF', sans-serif;
+    font-weight: 800;
     line-height: 25px;
     text-align: left;
 
@@ -156,7 +166,7 @@ html::-webkit-scrollbar {
 
 .header_searchbar {
     width: 500px;
-    height: 40px;
+    height: 48px;
     border-radius: 62px;
     background: rgba(240, 240, 240, 1);
     display: flex;
@@ -168,7 +178,7 @@ html::-webkit-scrollbar {
     position: absolute;
     font-size: 22px;
     left: 20px;
-    top: 10px;
+    top: 14px;
     color: rgba(0, 0, 0, 0.4);
 }
 
@@ -254,7 +264,8 @@ html::-webkit-scrollbar {
     line-height: 21.6px;
     text-align: left;
 }
-.modal{
+
+.modal {
     display: none;
 }
 
@@ -776,7 +787,8 @@ input[type="range"]::-webkit-slider-thumb {
     width: 420px;
     justify-content: flex-end;
 }
-.sort_cate{
+
+.sort_cate {
     display: flex;
     justify-content: flex-start;
 }
@@ -1028,7 +1040,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 #stayupdate_text {
     font-size: 40px;
-    font-weight: 700;
+    font-family: 'Integral CF', sans-serif;
+    font-weight: 800;
     line-height: 45px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
@@ -1102,12 +1115,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .footer_logo {
+    font-family: 'Integral CF', sans-serif;
+    font-weight: 800;
     height: 22px;
     width: 160px;
     gap: 0px;
     opacity: 0px;
     font-size: 32px;
-    font-weight: bolder;
+    
     line-height: 25px;
     text-align: left;
 }
